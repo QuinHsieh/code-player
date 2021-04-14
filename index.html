@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>Web code player</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Welcome to use the web editor player, including HTML.CSS and JavaScript coding to present the results." />
+    <meta name="author" content="Quin Hsieh" />
+    <meta property="og:title" content="Code player" />
+    <meta property="og:description" content="Code player exercise" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/og-img.png" />
+    <meta property="og:url" content="https://quinhsieh.github.io/code-player" />
+    <meta property="og:image:alt" content="Code player exercise" />
+    <meta property="og:image:type" content="image/png" />
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/cupertino/jquery-ui.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div id="menu">
+
+        <div class="menu-container">
+
+            <div id="logo">
+                Web code player
+            </div>
+
+            <button id="runCode" class="button" type="button" name="button"><span>Run Code </span></button>
+            <!-- span=> inline-block -->
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <ul id="accordion">
+
+        <h3 id="html-code" class="tab">HTML</h3>
+        <div class="code-container">
+            <textarea id="html-code">
+
+            </textarea>
+        </div>
+
+        <h3 id="css-code" class="tab">CSS</h3>
+        <div class="code-container">
+            <textarea id="css-code">
+
+            </textarea>
+        </div>
+
+        <h3 id="js-code" class="tab">JavaScript</h3>
+        <div class="code-container">
+            <textarea id="js-code">
+
+            </textarea>
+        </div>
+
+
+    </ul>
+
+    <div class="clear"></div>
+
+    <div id="result-container">
+
+        <h2>Result</h2>
+        <iframe id="result-frame"></iframe>
+    </div>
+
+    <div class="footer"></div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
